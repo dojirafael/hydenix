@@ -1,4 +1,4 @@
-{ lib, config, ... }:
+{ lib, config, pkgs, ... }:
 
 let
   cfg = config.hydenix;
@@ -12,6 +12,7 @@ in
     ./nix.nix
     ./sddm.nix
     ./system.nix
+  ] ++ lib.optionals pkgs.stdenv.isx86_64 [
     ./gaming.nix
   ];
 
