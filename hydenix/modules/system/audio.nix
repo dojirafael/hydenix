@@ -23,7 +23,7 @@ in
         enable = true;
         alsa = {
           enable = true;
-          support32Bit = true;
+          support32Bit = pkgs.stdenv.isx86_64;
         };
         pulse.enable = true;
         wireplumber.enable = true;
