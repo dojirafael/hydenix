@@ -20,9 +20,6 @@ in
     inputs.home-manager.nixosModules.home-manager
     ./hardware-configuration.nix
     inputs.self.nixosModules.default
-    inputs.nixos-hardware.nixosModules.common-cpu-intel
-    inputs.nixos-hardware.nixosModules.common-pc
-    inputs.nixos-hardware.nixosModules.common-pc-ssd
   ];
 
   home-manager = {

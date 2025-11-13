@@ -12,10 +12,6 @@ nixosConfiguration.extendModules {
               guest.port = 22;
             }
           ];
-          imports = [
-            inputs.nixos-hardware.nixosModules.common-gpu-amd
-            inputs.nixos-hardware.nixosModules.common-cpu-intel
-          ];
           virtualisation = {
             memorySize = 8192;
             cores = 6;
