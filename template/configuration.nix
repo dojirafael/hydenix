@@ -7,7 +7,7 @@ let
 
   # Package configuration - sets up package system with proper overlays
   # Most users won't need to modify this section
-  system = "x86_64-linux";
+  system = "aarch64-linux";
   pkgs = import inputs.nixpkgs {
     inherit system;
     config.allowUnfree = true;

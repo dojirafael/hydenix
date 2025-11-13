@@ -3,7 +3,7 @@
   ...
 }:
 let
-  system = "x86_64-linux";
+  system = "aarch64-linux";
   pkgs = import inputs.nixpkgs {
     inherit system;
     config.allowUnfree = true;
