@@ -12,8 +12,8 @@ in
   options.hydenix.gaming = {
     enable = lib.mkOption {
       type = lib.types.bool;
-      default = config.hydenix.enable;
-      description = "Enable gaming module";
+      default = config.hydenix.enable && pkgs.stdenv.isx86_64;
+      description = "Enable gaming module (x86_64 only)";
     };
   };
 
